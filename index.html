@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de comercio electrónico de AluraGeek para gestionar y visualizar productos retro y geek.">
+    <meta name="author" content="AluraGeek">
+    <meta name="keywords" content="AluraGeek, comercio electrónico, productos retro, productos geek">
+    <title>AluraGeek - Mis Productos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__iconos">
+                <span class="header__icono">❤</span>
+                <span class="header__icono">❤</span>
+                <span class="header__icono">❤</span>
+            </div>
+            <h1 class="header__titulo">AluraGeek</h1>
+        </div>
+    </header>
+
+    <!-- Sección principal -->
+    <main class="main">
+        <section class="productos" aria-labelledby="productos-title">
+            <h2 id="productos-title">Mis Productos</h2>
+            <div class="productos__grid">
+            </div>
+        </section>
+
+        <!-- Formulario para agregar producto -->
+        <aside class="formulario" aria-labelledby="formulario-title">
+            <h2 id="formulario-title">Agregar Producto</h2>
+            <form action="#" method="POST" class="formulario__form">
+                <label for="nombre" class="formulario__label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="formulario__input" placeholder="Nombre" >
+
+                <label for="precio" class="formulario__label">Precio:</label>
+                <input type="number" id="precio" name="precio" class="formulario__input" placeholder="Precio" >
+
+                <label for="imagen" class="formulario__label">Imagen:</label>
+                <input type="url" id="imagen" name="imagen" class="formulario__input" placeholder="URL de la imagen" >
+
+                <div class="formulario__botones">
+                    <button type="submit" class="formulario__boton formulario__boton--enviar">Enviar</button>
+                    <button type="reset" class="formulario__boton formulario__boton--limpiar">Limpiar</button>
+                </div>
+            </form>
+        </aside>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer__contenido">
+            <p>❤❤❤ AluraGeek</p>
+            <p>Desarrollado [por Alex]</p>
+            <p>Also LATAM - 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
